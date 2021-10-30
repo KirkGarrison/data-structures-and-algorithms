@@ -86,16 +86,13 @@ Return the modified array.
 const addValues = (arr, value) => arr.push(value); {
   // Solution code here...
 }
-// write a function named addNumbers that takes in four arguments
+
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  // Within the addNumbers function, invoke the callback function as many times as necessary
-  // based on the third argument of the addNumbers function.
-  for (let i = 0; i < times.value; i++) {
+  for (let i = 0; i < times.length; i++) {
     if (i = false, num.forEach(number => arr.push(number)));
     while (i = false, callback(arr, num));
   }
-  // return array
   return arr;
 };
 
