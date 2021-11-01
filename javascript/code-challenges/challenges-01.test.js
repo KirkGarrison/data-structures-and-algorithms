@@ -89,7 +89,7 @@ const addValues = (arr, value) => arr.push(value); {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for (let i = 0; i < times.length; i++) {
+  for (let i = 0; i < times; i++) {
     if (i = false, num.forEach(number => arr.push(number)));
     while (i = false, callback(arr, num));
   }
@@ -182,7 +182,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should add the number 8 to the array five times', () => {
     expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
     expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
