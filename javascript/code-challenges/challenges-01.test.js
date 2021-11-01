@@ -89,11 +89,11 @@ const addValues = (arr, value) => arr.push(value); {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  const newArr = [];
   for (let i = 0; i < times; i++) {
-    if (i = false, num.forEach(number => arr.push(number)));
-    while (i = false, callback(arr, num));
+    arr.push(callback(newArr, num));
   }
-  return arr;
+  return newArr;
 };
 
 
