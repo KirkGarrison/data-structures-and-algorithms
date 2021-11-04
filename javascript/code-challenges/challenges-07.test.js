@@ -135,7 +135,7 @@ const listFoods = (recipe) => {
     const spaceBar = element.indexOf(' ');
     return element.slice(element.indexOf(' ', spaceBar + 1) + 1);
   });
-  return result;
+  return result;npm
 };
 
 /* ------------------------------------------------------------------------------------------------
