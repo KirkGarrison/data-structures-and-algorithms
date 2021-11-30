@@ -21,3 +21,4 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+- [array-reverse](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/main/python/reversalWhiteboard/README.md)
