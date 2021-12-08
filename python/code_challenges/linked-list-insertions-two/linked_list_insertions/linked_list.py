@@ -64,3 +64,21 @@ class LinkedList:
             current = current.next
         output = output + "NULL"
         return output
+
+    def kthFromEnd(self, k):
+        if self.head is None or k < 0:
+            raise Exception
+        else:
+            current = self.head
+            other = self.head
+
+        for _ in range(k):
+            if other.next is None:
+                raise Exception
+            other = other.next
+
+        while other.next is not None:
+            other = other.next
+            current = current.next
+
+        return current.value
