@@ -63,7 +63,7 @@ class LinkedList:
         return False
 
 
-    def kthFromEnd(self, k):
+    def kth_from_end(self, k):
         if self.head is None or k < 0:
             raise Exception
         else:
