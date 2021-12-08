@@ -44,7 +44,6 @@ class LinkedList:
                 current = current.next
 
     def __str__(self):
-
         current = self.head
         string = ""
         while current:
@@ -63,16 +62,6 @@ class LinkedList:
             current = current.next
         return False
 
-    def __str__(self):
-
-        current = self.head
-
-        output = ""
-        while current:
-            output += "{" + current.value + "} -> "
-            current = current.next
-        output = output + "NULL"
-        return output
 
     def kthFromEnd(self, k):
         if self.head is None or k < 0:
