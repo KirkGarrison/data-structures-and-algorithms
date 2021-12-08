@@ -24,3 +24,4 @@ To run your tests
 - [array-reverse](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/main/python/reversalWhiteboard/README.md)
 
 - [array-insert-shift](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/main/python/array_insert_shift/README.md)
+- [linked-list](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/main/python/README.md)
