@@ -1,7 +1,6 @@
 from linked_list_insertions.linked_list import LinkedList, Node
 
 
-
 def test_node_function():
     node = Node("protein shakes")
     actual = node.value

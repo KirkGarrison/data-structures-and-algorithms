@@ -12,7 +12,6 @@ class LinkedList:
     def insert(self, value):
         self.head = Node(value, self.head)
 
-
     def append(self, value):
 
         current = self.head
@@ -43,6 +42,16 @@ class LinkedList:
                 break
             else:
                 current = current.next
+
+    def __str__(self):
+
+        current = self.head
+        string = ""
+        while current:
+            string += "{" + str(current.value) + "} -> "
+            current = current.next
+        string += "NULL"
+        return string
 
     def includes(self, value):
 
