@@ -12,7 +12,6 @@ class LinkedList:
     def insert(self, value):
         self.head = Node(value, self.head)
 
-
     def append(self, value):
 
         current = self.head
@@ -44,6 +43,15 @@ class LinkedList:
             else:
                 current = current.next
 
+    def __str__(self):
+        current = self.head
+        string = ""
+        while current:
+            string += "{" + str(current.value) + "} -> "
+            current = current.next
+        string += "NULL"
+        return string
+
     def includes(self, value):
 
         current = self.head
@@ -54,13 +62,21 @@ class LinkedList:
             current = current.next
         return False
 
-    def __str__(self):
 
-        current = self.head
+    def kth_from_end(self, k):
+        if self.head is None or k < 0:
+            raise Exception
+        else:
+            current = self.head
+            other = self.head
 
-        output = ""
-        while current:
-            output += "{" + current.value + "} -> "
+        for _ in range(k):
+            if other.next is None:
+                raise Exception
+            other = other.next
+
+        while other.next is not None:
+            other = other.next
             current = current.next
-        output = output + "NULL"
-        return output
+
+        return current.value
