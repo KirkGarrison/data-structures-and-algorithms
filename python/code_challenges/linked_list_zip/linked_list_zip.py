@@ -1,17 +1,21 @@
 from linked_list.linked_list import LinkedList
 
 def zip_lists(list_one, list_two):
-    placeholder = 0
-    one_traverser = list_one.head
-    while one_traverser is not None:
-        placeholder += 1
-        one_traverser = one_traverser.next
+        list_one_current = list_one.head
+        list_two_current = list_two.head
 
-    two_traverser = list_two.head
-    placeholder_two = 0
-    while two_traverser is not None:
-        placeholder_two += 1
-        two_traverser = two_traverser.next
+        while list_one_current != None and list_two_current != None:
 
-    return list_one
+            list_one_next = list_one_current.next
+            list_two_next = list_two_current.next
+
+            list_two_current.next = list_one_next
+            list_one_current.next = list_two_current
+
+            list_one_current = list_one_next
+            list_two_current = list_two_next
+            list_two.head = list_two_current
+
+        return list_one
+
 
