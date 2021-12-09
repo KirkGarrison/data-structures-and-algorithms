@@ -54,5 +54,5 @@ def test_str():
     linked_list.insert("nth of fib")
     linked_list.insert("lucas starts at 2")
     actual = str(linked_list)
-    expected = "{lucas starts at 2} -> {nth of fib} -> {M=D*V} -> NULL"
+    expected = "{ lucas starts at 2 } -> { nth of fib } -> { M=D*V } -> NULL"
     assert actual == expected

@@ -63,23 +63,23 @@ class LinkedList:
         return False
 
 
-def k_th_from_end(self, k):
-    leader = self.head
-    follower = None
+    def kth_from_end(self, k):
+        leader = self.head
+        follower = None
 
-    steps_ahead = 0
+        steps_ahead = 0
 
-    while leader:
-        leader = leader.next
+        while leader:
+            leader = leader.next
 
-        if follower:
-            follower = follower.next
-        elif steps_ahead == k:
-            follower = self.head
-        else:
-            steps_ahead += 1
+            if follower:
+                follower = follower.next
+            elif steps_ahead == k:
+                follower = self.head
+            else:
+                steps_ahead += 1
 
-    if not follower:
-        raise IndexError(f'k is out of range: {k}')
+        if not follower:
+            raise IndexError(f'k is out of range: {k}')
 
-    return follower.value
+        return follower.value
