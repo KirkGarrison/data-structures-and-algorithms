@@ -1,21 +1,34 @@
-from stack_and_queue.underflow_error import UnderflowError
 from stack_and_queue.node import Node
 
 class Queue:
     def __init__(self):
-        self._front = None
-        self._rear = None
+        self.front = None
+        self.rear = None
 
     def is_empty(self):
-        return self._rear is None
+        if self.front is None:
+            return True
+        return False
 
     def peek(self):
-        if not self._front:
-            raise UnderflowError()
-        return self._front.value
+        if not self.front:
+            raise ValueError('Queue is empty')
+        return self.front.value
 
     def enqueue(self, value):
-        self._rear = Node(value, self._rear)
+        self.rear = Node(value, self.rear)
 
-        if not self._front:
-            self._front = self._rear
+        if not self.front:
+            self.front = self.rear
+
+
+
+    def dequeue(self):
+        if not self.front:
+            raise ValueError("Queue is empty")
+        temp = self.front
+        self.front = self.front.next
+        temp.next = None
+        return temp.value
+
+
