@@ -47,16 +47,16 @@ def test_append(base_list):
     expected = None
     assert actual == expected
 
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_append_multiple(base_list):
     base_list.append("crewman")
     base_list.append("cadet")
 
-    actual = (base_list)
+    actual = str(base_list)
     expected = "{ pilot } -> { astronaut } -> { crewman } -> { cadet } -> NULL"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_insert_before_middle(base_list):
     base_list.append("crewman")
     base_list.insert_before("astronaut", "lieutenant")
@@ -74,7 +74,7 @@ def test_insert_before_first(base_list):
     expected = "{ crewman } -> { pilot } -> { astronaut } -> NULL"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_insert_after_middle(base_list):
     base_list.append("crewman")
     base_list.insert_after("astronaut", "lieutenant")
@@ -83,7 +83,7 @@ def test_insert_after_middle(base_list):
     expected = "{ pilot } -> { astronaut } -> { lieutenant } -> { crewman } -> NULL"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_insert_end(base_list):
     base_list.insert_after("astronaut", "lieutenant")
 
@@ -91,21 +91,21 @@ def test_insert_end(base_list):
     expected = "{ pilot } -> { astronaut } -> { lieutenant } -> NULL"
     assert actual == expected
 
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_insert_before(base_list):
     base_list.insert_before("pilot", "lieutenant")
 
     actual = str(base_list)
     expected = "{ lieutenant } -> { pilot } -> { astronaut } -> NULL"
     assert actual == expected
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_no_match(base_list):
     base_list.insert_after("captain", "lieutenant")
 
     actual = str(base_list)
     expected = "{ pilot } -> { astronaut } -> NULL"
     assert actual == expected
-@pytest.mark.skip('pending')
+# @pytest.mark.skip('pending')
 def test_insert_before_match(base_list):
     base_list.insert_before("captain", "lieutenant")
 

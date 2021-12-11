@@ -50,6 +50,15 @@ class LinkedList:
                 else:
                     current = current.next
 
+    def insert_after(self, value, value_after):
+        current = self.head
+        while current:
+            if current.value == value:
+                current.next = Node(value_after, current.next)
+                break
+            else:
+                current = current.next
+
     def kth_from_end(self, k):
         leader = self.head
         follower = None
