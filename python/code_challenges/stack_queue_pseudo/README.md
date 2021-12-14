@@ -15,3 +15,8 @@ Space O(1)
 
 ## API
 No Api's used (yet)
+
+
+Solution Code:
+[Link](
+https://github.com/KirkGarrison/data-structures-and-algorithms/blob/stack-queue-pseudo/python/code_challenges/stack_queue_pseudo/stack_queue_pseudo.py)
