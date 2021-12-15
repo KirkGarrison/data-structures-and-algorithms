@@ -11,5 +11,5 @@ Time O(N)
 Space O(1)
 
 ## Solution code
-[Link]()
+[Link](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/stack-queue-animal-shelter/python/code_challenges/stack_queue_animal_shelter/stack_queue_animal.py)
 
