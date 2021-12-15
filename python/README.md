@@ -77,4 +77,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 Table of Contents:
 
-[Pseudo Queue](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/stack-queue-pseudo/python/code_challenges/stack_queue_pseudo/README.md)
+- [Pseudo Queue](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/stack-queue-pseudo/python/code_challenges/stack_queue_pseudo/README.md)
+- [Stack and Queue AnimalShelter](https://github.com/KirkGarrison/data-structures-and-algorithms/tree/stack-queue-animal-shelter/python/code_challenges/stack_queue_animal_shelter)
