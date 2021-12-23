@@ -8,4 +8,4 @@ Return the odd sum values from a binary tree.
 My approach was to use a pre-order tree traversal, and compare each node value with a modulo % 2, and if the remainder is not 0, then to += that value to an assigned variable.
 
 ## Solution
-- [Solution link]()
+- [Solution link](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/main/python/code_challenges/odd_sum_binary/odd_sum_binary.py)

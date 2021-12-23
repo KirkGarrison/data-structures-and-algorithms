@@ -84,3 +84,5 @@ Table of Contents:
 - [Stack and Queue Brackets](https://github.com/KirkGarrison/data-structures-and-algorithms/blob/stack-queue-brackets/python/code_challenges/stack_queue_brackets/README.md)
 
 - [K-ary Tree FizzBuzz](https://github.com/KirkGarrison/data-structures-and-algorithms/tree/main/python/code_challenges/tree_fizz_buzz)
+
+- [Binary Tree Odd Sums](https://github.com/KirkGarrison/data-structures-and-algorithms/tree/main/python/code_challenges/odd_sum_binary)
