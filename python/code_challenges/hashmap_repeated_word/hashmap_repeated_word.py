@@ -18,5 +18,4 @@ def repeated_word(txt):
 
     if len(word_assesser) and hash.contains(word_assesser):
         return word_assesser
-        
     return None
