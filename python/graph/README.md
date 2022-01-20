@@ -14,3 +14,14 @@
 
 ## API
 - No API's used
+
+
+## Challenge
+- Write a breadth first method on the Graph class
+
+## Approach & Efficiency
+- I looked to my previous breadth first on the BinaryTree for inspiration, and watch a [Youtube](https://www.youtube.com/watch?v=PQhMkmhYZjQ) video for additional ideas
+
+## Solution
+- [Solution code]()
+

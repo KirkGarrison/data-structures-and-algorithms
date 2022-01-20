@@ -142,3 +142,14 @@ def test_get_neighbors_weight():
     assert neighbor_edge.vertex.value == "banana"
 
     assert neighbor_edge.weight == 44
+
+
+
+# def test_breadth_first_empty():
+#     assert Vertex()
+#     assert Graph(Vertex) == []
+
+
+def test_breadth_first_single():
+    assert Graph(Vertex())
+    assert Graph(Vertex) == [3]
